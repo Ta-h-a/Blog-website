@@ -14,7 +14,7 @@
         <p><%= i.body %></p>
     <% }else{ %>
         <% let truncated_text = i.body.slice(0,100)+"..." %>
-        <p><%= truncated_text %><a href="/posts/<%=i.title%>"> Read More</a></p>
+        <p><%= truncated_text %><a href="/posts/<%=i._id%>"> Read More</a></p>
     <% } %>
 
 <% }) %>
